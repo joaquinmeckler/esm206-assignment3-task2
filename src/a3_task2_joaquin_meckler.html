@@ -477,7 +477,8 @@ mpg_make_model &lt;- mpg %&gt;% # Start with mpg
 mpg_model_class&lt;-mpg %&gt;% 
   unite(col=model_class,
         c(model,class),
-        sep = &quot;-&quot;)</code></pre>
+        sep = &quot;-&quot;,
+        remove=FALSE)</code></pre>
 </div>
 </div>
 <div id="parsing-dates-with-lubridate" class="section level3">

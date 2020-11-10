@@ -138,7 +138,8 @@ In the code chunk below, starting from the `mpg` data create a new data frame ca
 mpg_model_class<-mpg %>% 
   unite(col=model_class,
         c(model,class),
-        sep = "-")
+        sep = "-",
+        remove=FALSE)
 
 ```
 
